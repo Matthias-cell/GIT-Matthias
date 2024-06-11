@@ -1,0 +1,615 @@
+* { margin: 0; 
+    padding: 0;  
+    box-sizing: border-box; 
+    font-family: 'source code pro';
+    font-weight: 500;
+    scroll-behavior: smooth;
+    }
+:root{
+    --background-color: #fff;
+    --paper-red: #E52A25; 
+    --paper-border: #000;
+}
+body {
+    background-color: var(--background-color);
+    display: grid;
+}
+body.dark{
+    --background-color: #505050;
+}
+header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: var(--paper-red);
+    border-bottom: 12px solid var(--paper-border);
+    align-items: center;
+    display: flex;
+    grid-column: 1 / -1;
+    justify-content: space-between;
+    padding-right: 16px;
+}
+.header-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.header-image {
+    height: 25px;
+    width: auto;
+    display: block;
+}
+
+.titel {
+    font-weight: 900;
+    font-size: 1.8rem;
+    padding-left: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
+
+.titelbox{
+    grid-column-start: 2;
+    grid-column-end: 7;
+}
+
+.face {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+div{
+    border: none;
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows:  repeat(24, 1fr);
+    height: 2025px;
+
+}
+
+.white-empty{
+    grid-column-start: -6;
+    grid-column-end: 1;
+    border-right: 12px solid var(--paper-border);
+    border-bottom: 12px solid var(--paper-border);
+    grid-row-start: 1;
+    grid-row-end: 8;
+
+}
+
+.headge{
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    border: none;
+    border-bottom: 12px solid var(--paper-border);
+    position: relative;
+    overflow: hidden;
+}
+
+.headge-text {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 8;
+}
+
+.health-inleiding {
+    display: none;
+}
+
+.grid-item {
+    padding: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+}  
+
+.square1 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 15;
+    grid-row-end: 16;
+    border-bottom: 12px solid var(--paper-border);
+    background-color: var(--paper-red);
+}
+
+.plant {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 20;
+    grid-row-end: 24;
+    border-bottom: 12px solid var(--paper-border);
+    border-right: 12px solid var(--paper-border);
+}
+
+.plant2 {
+    display: none;
+}
+
+.cyberhealth {
+    font-weight: 900;
+    font-size: 1.3rem;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.gezicht {
+    height: 100%;
+    position: absolute;
+    left: -40px;
+    z-index: 0;
+    padding-top: 17px;
+}
+
+.exclusief {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    border-bottom: 12px solid var(--paper-border);
+    border-right: 12px solid var(--paper-border);
+    background-color: #E52A25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.more {
+    font-weight: 900;
+    font-size: 1.50rem;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+
+.plus { 
+    height: 25px;
+    padding-right: 15px;
+}
+
+.verslaving {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 8;
+    grid-row-end: 15;
+    border-bottom: 12px solid var(--paper-border);
+    position: relative;
+    overflow: hidden;
+}
+
+.verslaving-text {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 8;
+    grid-row-end: 15;
+    position: relative;
+    overflow: hidden;
+}
+
+.spuit {
+    height: 95%;
+    padding-left: 55px;
+    padding-top: 12px;
+    position: absolute;
+}
+
+.drugs {
+    position: absolute;
+    transform: rotate(-90deg);
+    font-weight: 900;
+    font-size: 5.1rem;
+    left: -245px;
+    top: 40%;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.exclusive {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 9;
+    grid-row-end: 20;
+    border-bottom: 12px solid var(--paper-border);
+    border-right: 12px solid var(--paper-border);
+    display: grid;
+    grid-template-columns: 1fr;  
+    justify-items: center;
+}
+
+.plus2 {
+    height: auto; 
+    width: 100%; 
+}
+
+.random {
+    text-align: left; 
+    width: 100%;
+    padding-top: 10px;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.duo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: left;
+    justify-content: center;
+    min-width: 100%; 
+}
+
+.grid-container>.duo.float{
+    display: none;
+}
+
+.artikels {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 16;
+    grid-row-end: 22;
+    border-bottom: 12px solid var(--paper-border);
+    display: grid;
+    grid-template-columns: 1fr;  
+}
+
+.saai-artikel {
+    padding-top: 15px;
+    padding-left: 15px;
+    justify-content: space-evenly;
+}
+
+.saai-artikel p {
+    font-size: 1rem;
+    font-weight: 900;
+    justify-content: space-evenly;
+}
+
+.social {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 24;
+    grid-row-end: 25;
+    border-right: 12px solid var(--paper-border);
+    font-size: 1.20rem;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.social p {
+    text-align: right;
+    font-weight: 900;
+}
+
+.social-icons {
+    max-width: 80%;
+    padding-top: 10px;
+}
+
+.footerbox {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 22;
+    grid-row-end: 25;
+    background-color: #E52A25;
+}
+
+.footer-title {
+    font-weight: 900;
+    font-size: 1.1rem;
+    padding: 15px;
+    padding-bottom: 10px;
+}
+
+.footer-info {
+    padding-left: 15px;
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 700px){
+    
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows:  repeat(35, 1fr);
+        height: 2953px;
+    
+    }
+    
+    .titelbox{
+        grid-column-start: 2;
+        grid-column-end: 13;
+    }
+
+    header {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .titel {
+        font-size: 4rem;
+    }
+
+    .header-image {
+        height: 50px;
+    }
+    
+    .headge{
+        grid-column-start: 6;
+        grid-column-end: 13;
+        grid-row-start: 3;
+        grid-row-end: 10;
+    }
+
+    .cyberhealth {
+        grid-column-start: 5;
+        grid-column-end: 13;
+        font-size: 3rem;
+
+    }
+
+    .headge-text {
+        grid-column-start: 5;
+        grid-column-end: 13;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    .white-empty{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border-right: 12px solid var(--paper-border);
+        border-bottom: 0;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    .white-empty2 {
+        grid-column-start: 11;
+        grid-column-end: 13;
+        grid-row-start: 12;
+        grid-row-end: 14;
+        border-bottom: 12px solid var(--paper-border);
+    }
+
+    .white-empty3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 11;
+        grid-row-end: 30;
+        border-right: 12px solid var(--paper-border);
+    }
+
+    .white-empty4 {
+        grid-column-start: 6;
+        grid-column-end: 7;
+        grid-row-start: 30;
+        grid-row-end: 32;
+        border-top: 12px solid var(--paper-border);
+        border-left: 12px solid var(--paper-border);
+    }
+    .square1 {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        border-right: 12px solid var(--paper-border);
+        border-bottom: 12px solid var(--paper-border);
+        grid-row-start: 11;
+        grid-row-end: 12;
+        background-color: #E52A25;
+    }
+
+    .health-inleiding {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        border-right: 12px solid var(--paper-border);
+        border-bottom: 12px solid var(--paper-border);
+        border-top: 12px solid var(--paper-border);
+        grid-row-start: 4;
+        grid-row-end: 11;
+        padding: 10px;
+        font-weight: 500;
+        font-size: 1.5rem;
+        font-size: clamp(1.25rem, 0.6875rem + 1.5vw, 2rem); 
+    }
+
+    .verslaving-text {
+        grid-column-start: 6;
+        grid-column-end: 13;
+        grid-row-start: 10;
+        grid-row-end: 12;
+        position: relative;
+        text-align: center;
+        align-items: center;
+        border-bottom: 12px solid var(--paper-border);
+    }
+    
+    .verslaving {
+        grid-column-start: 2;
+        grid-column-end: 11;
+        grid-row-start: 12;
+        grid-row-end: 14;
+        border-right: 12px solid var(--paper-border);
+        align-items: center;
+    }
+
+    .spuit {
+        transform: rotate(90deg);
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        height: 275%;
+    }
+    
+    .drugs {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 900;
+        font-size: 4rem;
+    }
+
+    .exclusief {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 14;
+        grid-row-end: 15;
+        border-right: none;
+    }
+
+    .plus {
+        height: 40px;
+    }
+
+    .exclusive {
+        grid-column-start: 2;
+        grid-column-end: 13;
+        grid-row-start: 15;
+        grid-row-end: 30;
+        border: none;
+
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows:  repeat(16, 1fr);
+    }
+    
+    .duo {
+        padding: 20px;
+        padding-top: 50px;
+    }
+
+    .plus2 {
+        height: 100%;
+        width: 100%; 
+        object-fit: contain; /*Michiel: laat inhoud van img element zo goed mogelijk width en height vullen */
+    }
+
+    .random {
+        font-size: 1.5rem;
+    }
+
+    .exclusive>.duo.float{
+        display: none;
+    }
+    .grid-container>.duo.float{
+        display: flex;
+        grid-column-start: 7;
+        grid-column-end: 13;
+        grid-row-start: 22;
+        grid-row-end: 26;
+    }
+
+    .more {
+        font-size: 2.5rem;
+        padding-right: 30px;
+    }
+
+    .artikels {
+        grid-column-start: 7;
+        grid-column-end: 13;
+        grid-row-start: 14;
+        grid-row-end: 22;
+        border-bottom: 12px solid var(--paper-border);
+        border-left: 12px solid var(--paper-border);
+        display: grid;
+        grid-template-columns: 1fr;  
+    }
+
+    .saai-artikel p {
+        font-size: 1.5rem;
+    }
+
+    .plant {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 30;
+        grid-row-end: 34;
+        border-right: none;
+        border-top: 12px solid var(--paper-border);
+    }
+
+    .plant2 {
+        display: grid;
+        grid-column-start: 7;
+        grid-column-end: 13;
+        grid-row-start: 26;
+        grid-row-end: 32;
+        border-top: 12px solid var(--paper-border);
+        border-left: 12px solid var(--paper-border);
+    }
+
+    .social {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 34;
+        grid-row-end: 36;
+        border-right: none;
+    }
+
+    .social p {
+        font-size: 2rem;
+        padding-bottom: 15px;
+        padding-top: 25px;
+    }
+
+    .footerbox {
+        grid-column-start: 6;
+        grid-column-end: 13;
+        grid-row-start: 32;
+        grid-row-end: 36;
+        border-top: 12px solid var(--paper-border);
+        border-left: 12px solid var(--paper-border);
+    }
+    
+    .footer-title {
+        font-size: 2rem;
+    }
+
+    .footer-info {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    
+    .cyberhealth {
+        font-size: 4rem;
+
+    }
+
+    .headge-text {
+        grid-column-start: 4;
+        grid-column-end: 10;
+    }
+
+    .health-inleiding p {
+        font-size: 1.9rem;
+        padding: 10px;
+    }
+
+    .titel {
+        font-size: 7rem;
+    }
+
+    .drugs {
+        font-size: 6.5rem;
+    }
+
+    .social p {
+        font-size: 3rem;
+    }
+}
