@@ -9,6 +9,7 @@
     --background-color: #fff;
     --paper-red: #E52A25; 
     --paper-border: #000;
+    --dark-mode-text: #fff;
 }
 body {
     background-color: var(--background-color);
@@ -16,13 +17,21 @@ body {
     transition: all 800ms;
 }
 body.dark{
-    --background-color: #505050;
+    --background-color: #353535;
     transition: all 800ms ease;
 }
 
 body.dark-no-trans {
-    --background-color: #505050;
+    --background-color: #353535;
     transition: none;
+}
+
+body.dark > * {
+    color: var(--dark-mode-text);
+}
+
+body.dark-no-trans > * {
+    color: var(--dark-mode-text);
 }
 
 header {
@@ -183,6 +192,9 @@ div{
 .plant2 {
     display: none;
 }
+
+.plant2-img {
+    display: none;}
 
 .cyberhealth {
     font-weight: 900;
@@ -365,6 +377,14 @@ div{
 .social p {
     text-align: right;
     font-weight: 900;
+}
+
+.social-pictures {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 24;
+    grid-row-end: 25;
+    padding-top: 25px;
 }
 
 .social-icons {
@@ -655,6 +675,13 @@ div{
         grid-row-start: 25;
         grid-row-end: 46;
         border-left: 12px solid var(--paper-border);
+        align-items: end;
+        justify-content: center;
+    }
+
+    .plant2-img {
+        width: 100%;
+        display: block;
     }
 
     .social {
@@ -668,6 +695,14 @@ div{
     .social p {
         font-size: 2rem;
         padding-bottom: 15px;
+        padding-top: 25px;
+    }
+
+    .social-pictures {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 48;
+        grid-row-end: 50;
         padding-top: 25px;
     }
 
