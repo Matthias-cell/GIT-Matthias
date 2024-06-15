@@ -491,14 +491,15 @@ q {
 
     .social-pictures {
         grid-column-start: 1;
-        grid-column-end: 4;
+        grid-column-end: 6;
         grid-row-start: 43;
         grid-row-end: 45;
-        padding-top: 10px;
+        padding-top: 30px;
     }
 
     .social-icons {
-        height: 100%;
+        padding-top: 0px;
+        height: 90%;
     }
 
     .vervuiling-titel {

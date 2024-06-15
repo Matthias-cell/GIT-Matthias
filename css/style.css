@@ -768,4 +768,9 @@ div{
         font-size: 3rem;
         padding-top: 0;
     }
+
+    .social-icons {
+         padding: 0; 
+         height: 90%;  
+    } 
 }
